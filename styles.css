@@ -1,4 +1,4 @@
-/* Stile generale */
+/* Stili Generali */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,48 +6,62 @@ body {
     background-color: #f4f4f4;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 /* Header */
 header {
     background: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
+    color: #fff;
+    padding: 20px 0;
 }
 
-nav ul {
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
 
-/* Hero Section */
+/* Sezione Hero */
 .hero {
-    background: url('banner.jpg') no-repeat center center/cover;
+    background: url('hero-image.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
     text-align: center;
-    color: white;
-    padding: 20px;
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px;
 }
 
 .hero h2 {
@@ -64,12 +78,10 @@ nav ul li a {
     display: inline-block;
     padding: 10px 20px;
     background: orange;
-    color: white;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 18px;
     margin-top: 10px;
-    transition: background 0.3s;
 }
 
 .btn:hover {
@@ -78,38 +90,28 @@ nav ul li a {
 
 /* Sezione Servizi */
 .services {
+    padding: 40px 0;
+    background: #fff;
     text-align: center;
-    padding: 40px;
-    background: white;
 }
 
 .services h2 {
-    font-size: 28px;
     margin-bottom: 20px;
 }
 
-.service-box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .service {
-    width: 250px;
-    margin: 20px;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
     padding: 20px;
-    background: #ddd;
+    background: #f4f4f4;
     border-radius: 10px;
-    transition: transform 0.3s;
 }
 
-.service:hover {
-    transform: scale(1.05);
+.service h3 {
+    margin-top: 0;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+/* Sezione Chi S
+::contentReference[oaicite:10]{index=10}
+ 
