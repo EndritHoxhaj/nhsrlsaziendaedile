@@ -150,3 +150,58 @@ footer {
     text-decoration: none;
     font-size: 16px;
 }
+
+.partners {
+    background: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.partner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.partner-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.partner-info {
+    text-align: left;
+    max-width: 500px;
+}
+
+.partner-title {
+    color: #e6c300;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.partner-info h2 {
+    font-size: 28px;
+    color: #222;
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.partner-logos img {
+    height: 50px;
+    max-width: 150px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.partner-logos img:hover {
+    filter: grayscale(0%);
+}
