@@ -46,6 +46,7 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
+    max-width: 600px;
 }
 
 .banner h2 {
@@ -67,6 +68,11 @@ nav ul li a {
     border-radius: 5px;
     font-size: 18px;
     margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: darkorange;
 }
 
 /* Sezione Punti di Forza */
@@ -85,6 +91,11 @@ nav ul li a {
     padding: 20px;
     background: #ddd;
     border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
 }
 
 footer {
