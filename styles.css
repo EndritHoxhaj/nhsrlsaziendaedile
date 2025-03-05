@@ -1,9 +1,10 @@
-/* Stili Generali */
+/* Stile Generale */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
@@ -14,54 +15,52 @@ body {
 
 /* Header */
 header {
-    background: #333;
-    color: #fff;
+    background: #222;
+    color: #ffd700;
     padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    float: left;
     margin: 0;
-    padding: 0 20px;
+    font-size: 28px;
 }
 
-header nav {
-    float: right;
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
     margin-top: 10px;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
+nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
 
-/* Sezione Hero */
+/* Hero Section */
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 400px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     text-align: center;
+    color: white;
+    padding: 20px;
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
     border-radius: 10px;
+    max-width: 600px;
 }
 
 .hero h2 {
@@ -76,42 +75,78 @@ header nav ul li a {
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background: orange;
-    color: #fff;
+    padding: 12px 24px;
+    background: #ffd700;
+    color: #222;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
     margin-top: 10px;
 }
 
 .btn:hover {
-    background: darkorange;
+    background: #e6c300;
 }
 
-/* Sezione Servizi */
-.services {
-    padding: 40px 0;
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: center;
     background: #fff;
-    text-align: center;
+    padding: 40px;
 }
 
-.services h2 {
-    margin-bottom: 20px;
-}
-
-.service {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
+.info-box {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background: #222;
+    color: white;
     padding: 20px;
-    background: #f4f4f4;
     border-radius: 10px;
 }
 
-.service h3 {
-    margin-top: 0;
+.info {
+    text-align: center;
 }
 
-/* Sezione Chi S
-::contentReference[oaicite:10]{index=10}
- 
+.icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #ffd700;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-menu, .footer-services {
+    text-align: left;
+}
+
+.footer-menu h4, .footer-services h4 {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li a, .footer-services ul li {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
