@@ -1,92 +1,134 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NH SRLS - Costruzioni e Ristrutturazioni</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>NH SRLS</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
-                    <li><a href="servizi.html">Servizi</a></li>
-                    <li><a href="progetti.html">Progetti</a></li>
-                    <li><a href="contatti.html">Contatti</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Stile Generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <!-- Hero con immagine di sfondo -->
-    <section class="hero">
-        <div class="hero-overlay">
-            <h2>Realizziamo il tuo progetto con qualità e affidabilità</h2>
-            <p>NH SRLS è specializzata in costruzioni e ristrutturazioni su misura.</p>
-            <a href="contatti.html" class="btn">Richiedi un preventivo</a>
-        </div>
-    </section>
+/* Header */
+header {
+    background: #222;
+    color: #ffd700;
+    padding: 20px 0;
+    text-align: center;
+}
 
-    <!-- Sezione Informazioni o Preventivi -->
-    <section class="info-preventivi">
-        <h3>Hai bisogno di un preventivo?</h3>
-        <p>Contattaci per ricevere informazioni dettagliate e un preventivo personalizzato.</p>
-        <a href="contatti.html" class="btn">Contattaci</a>
-    </section>
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
 
-    <!-- Sezione Partner -->
-    <section class="partners">
-        <div class="partner-container">
-            <div class="partner-image">
-                <img src="team-partner.jpg" alt="Team al lavoro">
-            </div>
-            <div class="partner-info">
-                <h3 class="partner-title">PARTNER</h3>
-                <h2>I Partner che ci aiutano a realizzare progetti straordinari</h2>
-                <div class="partner-logos">
-                    <img src="partner1.png" alt="Partner 1">
-                    <img src="partner2.png" alt="Partner 2">
-                    <img src="partner3.png" alt="Partner 3">
-                    <img src="partner4.png" alt="Partner 4">
-                    <img src="partner5.png" alt="Partner 5">
-                    <img src="partner6.png" alt="Partner 6">
-                </div>
-            </div>
-        </div>
-    </section>
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+}
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>NH SRLS</h3>
-                <p>Impresa edile specializzata nella costruzione, ristrutturazione e manutenzione.</p>
-            </div>
-            <div class="footer-column">
-                <h4>Menu</h4>
-                <ul>
-                    <li><a href="chi-siamo.html">Chi siamo</a></li>
-                    <li><a href="servizi.html">Servizi</a></li>
-                    <li><a href="progetti.html">Lavori</a></li>
-                    <li><a href="contatti.html">Contatti</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Servizi</h4>
-                <ul>
-                    <li>Ristrutturazione</li>
-                    <li>Restauro</li>
-                    <li>Manutenzione</li>
-                    <li>Riqualificazioni</li>
-                    <li>Rifacimento tetti</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero con immagine di sfondo */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ffd700;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Sezione Informazioni o Preventivi */
+.info-preventivi {
+    background: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.info-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.info-preventivi h3 {
+    font-size: 22px;
+    color: #222;
+}
+
+.info-preventivi p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #ffd700;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
