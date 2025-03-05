@@ -313,7 +313,7 @@ footer {
 }
 /* Hero della sezione Progetti con immagine di sfondo */
 .hero-projects {
-    background: url('progetti-hero.jpg') no-repeat center center/cover;
+    background: url('./progetti-hero.jpg') no-repeat center center/cover;
     height: 300px;
     display: flex;
     align-items: center;
