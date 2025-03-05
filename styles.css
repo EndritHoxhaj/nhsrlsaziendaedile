@@ -44,116 +44,11 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Hero Section */
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
-}
-
-.hero h2 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #ffd700;
-    color: #222;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #e6c300;
-}
-
-/* Contact Section */
-.contact-section {
-    background: #222;
-    padding: 40px 0;
-    text-align: center;
-    color: white;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.contact-box {
-    background: #333;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-}
-
-.contact-icon {
-    font-size: 30px;
-    display: block;
-    margin-bottom: 10px;
-    color: #ffd700;
-}
-
-/* Footer */
-footer {
-    background: #111;
-    color: #ffd700;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-column {
-    text-align: left;
-}
-
-.footer-column h4 {
-    margin-bottom: 10px;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
 /* Sezione Partner */
 .partners {
     background: #f9f9f9;
     padding: 60px 0;
+    text-align: center;
 }
 
 .partner-container {
@@ -203,4 +98,37 @@ footer {
 
 .partner-logos img:hover {
     filter: grayscale(0%);
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #ffd700;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
