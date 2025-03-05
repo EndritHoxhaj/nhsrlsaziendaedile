@@ -6,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background: #333;
     color: white;
@@ -30,36 +31,80 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Sezione Chi Siamo */
-.about, .mission, .why-choose-us {
-    padding: 40px;
+/* Hero Section */
+.hero {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: white;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 20px;
 }
 
-.about img {
-    width: 80%;
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
     max-width: 600px;
-    border-radius: 10px;
-    margin-top: 20px;
 }
 
-.mission {
-    background: #f9f9f9;
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
 }
 
-.why-choose-us ul {
-    list-style: none;
-    padding: 0;
-}
-
-.why-choose-us ul li {
+.hero p {
     font-size: 18px;
     margin: 10px 0;
-    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+
+/* Sezione Servizi */
+.services {
+    text-align: center;
+    padding: 40px;
+    background: white;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
 }
 
 footer {
