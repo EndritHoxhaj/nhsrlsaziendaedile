@@ -499,30 +499,3 @@ footer {
 .contact-form button:hover {
     background: #e6c200;
 }
-/* Correggiamo il colore del testo nella sezione Contatti */
-.contact-section h2,
-.contact-section h3,
-.contact-section p {
-    color: #222 !important; /* Testo nero */
-}
-
-/* Cambiamo anche il colore dei link */
-.contact-section a {
-    color: #007bff; /* Blu acceso per i link */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Assicuriamoci che il testo del modulo sia leggibile */
-.contact-form-container input,
-.contact-form-container textarea {
-    color: #222; /* Testo nero */
-    background: white; /* Sfondo bianco */
-    border: 1px solid #ddd;
-}
-
-/* Cambiamo colore anche ai placeholder */
-.contact-form-container input::placeholder,
-.contact-form-container textarea::placeholder {
-    color: #666; /* Grigio scuro per migliore visibilità */
-}
