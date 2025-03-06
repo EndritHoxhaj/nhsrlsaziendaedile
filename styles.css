@@ -496,3 +496,9 @@ footer {
     text-align: center; /* Allineato al centro */
     font-weight: bold;
 }
+/* Assicuriamoci che "I nostri contatti" sia nero */
+.contact-section h2 {
+    color: #000 !important; /* Testo nero definitivo */
+    text-align: center;
+    font-weight: bold;
+}
