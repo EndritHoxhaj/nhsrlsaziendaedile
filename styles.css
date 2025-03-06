@@ -536,13 +536,14 @@ footer {
     opacity: 1 !important; /* Rende il testo completamente visibile */
 }
 /* ==============================
-   🌍 RESPONSIVE DESIGN 
+   🌍 RESPONSIVE DESIGN PERFETTO 
 ================================= */
 
-/* Per schermi più piccoli di 1024px */
+/* Per schermi più piccoli di 1024px (Tablet) */
 @media screen and (max-width: 1024px) {
     .container {
-        padding: 10px;
+        padding: 15px;
+        width: 100%;
     }
 
     header nav ul {
@@ -562,19 +563,26 @@ footer {
     }
 }
 
-/* Per schermi più piccoli di 768px (Tablet e Mobile) */
+/* Per schermi più piccoli di 768px (Tablet Verticale e Smartphone) */
 @media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
     h1, h2 {
-        font-size: 22px;
+        font-size: 20px;
+        text-align: center;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
     }
 
     .container {
         width: 100%;
-        padding: 15px;
+        padding: 10px;
     }
 
     .contact-info-container {
@@ -592,11 +600,31 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
 
     header nav ul li {
-        padding: 10px;
         width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .button {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Correggiamo i margini e padding dei box */
+    .about,
+    .mission,
+    .why-choose-us,
+    .contact-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-box {
+        width: 95%;
     }
 }
 
@@ -610,16 +638,5 @@ footer {
         font-size: 14px;
     }
 
-    .contact-box {
-        width: 95%;
-    }
-
     .container {
-        padding: 10px;
-    }
-
-    .button {
-        width: 100%;
-        text-align: center;
-    }
-}
+        padding: 5p
