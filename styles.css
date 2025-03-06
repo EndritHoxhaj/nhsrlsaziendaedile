@@ -170,30 +170,29 @@ footer {
  
 /* Stile per la sezione Partner */
 .contenitore-partner {
-    display: flex; /* Usa flexbox per il layout */
-    flex-wrap: wrap; /* Permette ai loghi di andare a capo su schermi piccoli */
-    align-items: center; /* Allinea gli elementi verticalmente al centro */
-    justify-content: center; /* Allinea il contenuto orizzontalmente al centro */
-    gap: 20px; /* Distanza tra i loghi */
-    text-align: center;
+    espore: flettere;
+    Flex-Wrap: avvolgere; /* Permette ai loghi di andare a capo su schermi piccoli */
+    allinea elementi: centro;
+    giustificare-il contenuto: centro;
+    Divario: 20px; /* Distanza tra i loghi */
+    allineamento del testo: centro;
 }
 
 .contenitore-partner img {
-    max-width: 100%; /* Adatta i loghi alla larghezza del contenitore */
-    height: auto;
-    max-height: 60px; /* Limita l'altezza dei loghi */
+    larghezza massima: 100%; /* Adatta i loghi alla larghezza del contenitore */
+    altezza: Automatico;
+    altezza massima: 60px; /* Limita l'altezza dei loghi */
 }
 
-/* Media query per adattare il layout su dispositivi mobili */
-@media screen and (max-width: 768px) {
+@media schermo e (larghezza massima: 768Px) {
     .contenitore-partner {
-        flex-direction: column; /* I loghi si dispongono in colonna su schermi piccoli */
-        align-items: center;
+        direzione di flessione: colonna; /* I loghi si dispongono in colonna su schermi piccoli */
+        allinea elementi: centro;
     }
 
     .contenitore-partner img {
-        max-width: 80%; /* I loghi si restringono su schermi piccoli */
-        max-height: 50px;
+        larghezza massima: 80%; /* I loghi si restringono su schermi piccoli */
+        altezza massima: 50Px;
     }
 
 /* Hero per Chi Siamo con immagine di sfondo */
