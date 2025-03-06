@@ -490,3 +490,9 @@ footer {
 .contact-form-container h2 {
     color: #222 !important; /* Nero per il titolo */
 }
+/* Correggiamo il colore della scritta "I nostri contatti" */
+.contact-section h2 {
+    color: #222 !important; /* Nero */
+    text-align: center; /* Allineato al centro */
+    font-weight: bold;
+}
