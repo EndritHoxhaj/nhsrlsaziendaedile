@@ -509,3 +509,12 @@ footer {
     font-weight: bold;
     opacity: 1 !important;
 }
+/* Forziamo il colore nero e annulliamo eventuali effetti di trasparenza */
+.contact-section h2 {
+    color: #000 !important; /* Nero assoluto */
+    text-align: center;
+    font-weight: bold;
+    background: none !important; /* Rimuove eventuali sfondi trasparenti */
+    filter: none !important; /* Disattiva eventuali effetti di trasparenza */
+    opacity: 1 !important; /* Rende il testo completamente visibile */
+}
