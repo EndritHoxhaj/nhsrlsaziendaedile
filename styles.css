@@ -174,25 +174,39 @@ footer {
     flex-wrap: wrap; /* Permette ai loghi di andare a capo su schermi piccoli */
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Distanza tra i loghi */
+    gap: 20px; /* Distanza tra gli elementi */
     text-align: center;
 }
 
-.partner-container img {
-    max-width: 100%; /* Adatta i loghi alla larghezza del contenitore */
-    height: auto;
-    max-height: 60px; /* Limita l'altezza dei loghi */
+/* Stile per la sezione che contiene i loghi */
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap; /* Permette ai loghi di riadattarsi */
+    justify-content: center;
+    gap: 15px; /* Distanza tra i loghi */
 }
 
+/* Stile per i loghi */
+.partner-logos img {
+    max-width: 180px; /* Dimensione massima su PC */
+    height: auto;
+}
+
+/* Adattamenti per dispositivi mobili */
 @media screen and (max-width: 768px) {
     .partner-container {
-        flex-direction: column; /* I loghi si dispongono in colonna su schermi piccoli */
-        align-items: center;
+        flex-direction: column; /* Dispone tutto in colonna su schermi piccoli */
+        text-align: center;
     }
 
-    .partner-container img {
-        max-width: 80%; /* I loghi si restringono su schermi piccoli */
-        max-height: 50px;
+    .partner-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .partner-logos img {
+        max-width: 120px; /* I loghi si restringono su schermi piccoli */
+    
     }
 
 /* Stili specifici per la pagina Chi Siamo */
