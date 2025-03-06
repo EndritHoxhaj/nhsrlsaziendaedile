@@ -502,3 +502,10 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+/* Forziamo il colore nero per "I nostri contatti" */
+.contact-section h2 {
+    color: black !important; /* Nero assoluto */
+    text-align: center;
+    font-weight: bold;
+    opacity: 1 !important;
+}
