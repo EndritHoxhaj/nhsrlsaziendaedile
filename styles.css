@@ -168,45 +168,56 @@ footer {
     font-size: 16px;
 }
  
-/* Stile per la sezione Partner */
+/* Contenitore principale per la sezione Partner */
 .partner-container {
     display: flex;
-    flex-wrap: wrap; /* Permette ai loghi di andare a capo su schermi piccoli */
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Distanza tra gli elementi */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Sezione che contiene immagine e testo */
+.partner-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.partner-info {
+    max-width: 600px;
     text-align: center;
 }
 
-/* Stile per la sezione che contiene i loghi */
+/* Contenitore per i loghi */
 .partner-logos {
     display: flex;
-    flex-wrap: wrap; /* Permette ai loghi di riadattarsi */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Distanza tra i loghi */
+    align-items: center;
+    gap: 15px;
 }
 
-/* Stile per i loghi */
+/* Stile dei loghi */
 .partner-logos img {
-    max-width: 180px; /* Dimensione massima su PC */
+    max-width: 180px; /* Dimensione standard su PC */
     height: auto;
 }
 
-/* Adattamenti per dispositivi mobili */
+/* Adattamenti per mobile */
 @media screen and (max-width: 768px) {
     .partner-container {
-        flex-direction: column; /* Dispone tutto in colonna su schermi piccoli */
+        flex-direction: column; /* Dispone in colonna su mobile */
         text-align: center;
     }
 
     .partner-logos {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column; /* Dispone i loghi uno sotto l’altro */
+        gap: 10px; /* Riduce lo spazio tra i loghi */
     }
 
     .partner-logos img {
-        max-width: 120px; /* I loghi si restringono su schermi piccoli */
-    
+        max-width: 140px; /* I loghi si restringono su mobile */
     }
 
 /* Stili specifici per la pagina Chi Siamo */
