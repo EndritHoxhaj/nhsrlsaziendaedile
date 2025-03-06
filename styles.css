@@ -168,32 +168,25 @@ footer {
     font-size: 16px;
 }
  
-/* Stile per la sezione Partner */
-.contenitore-partner {
-    espore: flettere;
-    Flex-Wrap: avvolgere; /* Permette ai loghi di andare a capo su schermi piccoli */
-    allinea elementi: centro;
-    giustificare-il contenuto: centro;
-    Divario: 20px; /* Distanza tra i loghi */
-    allineamento del testo: centro;
+<!-- Sezione Partner -->
+<section class="partners">
+    <div class="partner-container">
+        <div class="partner-image">
+            <img src="team-partner.jpg" alt="Team al lavoro">
+        </div>
+        <div class="partner-info">
+            <h3 class="partner-title">PARTNER</h3>
+            <h2>I Partner che ci aiutano a realizzare progetti straordinari</h2>
+            <div class="partner-logos">
+                <img src="partner1.png" alt="Partner 1">
+                <img src="partner2.png" alt="Partner 2">
+                <img src="partner3.png" alt="Partner 3">
+                <img src="partner4.png" alt="Partner 4">
+            </div>
+        </div>
+    </div>
+</section>
 }
-
-.contenitore-partner img {
-    larghezza massima: 100%; /* Adatta i loghi alla larghezza del contenitore */
-    altezza: Automatico;
-    altezza massima: 60px; /* Limita l'altezza dei loghi */
-}
-
-@media schermo e (larghezza massima: 768Px) {
-    .contenitore-partner {
-        direzione di flessione: colonna; /* I loghi si dispongono in colonna su schermi piccoli */
-        allinea elementi: centro;
-    }
-
-    .contenitore-partner img {
-        larghezza massima: 80%; /* I loghi si restringono su schermi piccoli */
-        altezza massima: 50Px;
-    }
 
 /* Hero per Chi Siamo con immagine di sfondo */
 .hero-about {
