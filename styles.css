@@ -479,3 +479,14 @@ footer {
 .contact-form button:hover {
     background: #e6c200;
 }
+/* Cambia SOLO il colore delle scritte dei contatti */
+.contact-section h2,
+.contact-section h3,
+.contact-section p {
+    color: #222 !important; /* Testo nero */
+}
+
+/* Cambia anche il colore della sezione "Scrivici un messaggio" */
+.contact-form-container h2 {
+    color: #222 !important; /* Nero per il titolo */
+}
