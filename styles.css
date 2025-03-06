@@ -1,36 +1,22 @@
-/* Stile Generale */
+/* Stili generali */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f5f5f5;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header */
+/* Intestazione */
 header {
-    background: #222;
-    color: #ffd700;
-    padding: 20px 0;
+    background-color: black;
+    color: yellow;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 28px;
+    padding: 20px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    text-align: center;
-    margin-top: 10px;
 }
 
 nav ul li {
@@ -39,586 +25,63 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
 }
 
-/* Hero Section */
+/* Sezione Hero */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url('hero.jpg') center/cover no-repeat;
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
-.hero-content {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
+/* Sezione Progetti */
+.progetti {
+    text-align: center;
+    padding: 50px;
 }
 
-.hero h2 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #ffd700;
-    color: #222;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #e6c300;
-}
-
-/* Stile per i box della sezione contatti */
-.contact-info-container {
+.galleria-progetti {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-/* Box singoli SOLO per i contatti */
-.contact-section .contact-box {
-    background: white; /* Torniamo al bianco per i contatti */
-    padding: 20px;
+.progetto {
+    background: white;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.progetto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Sezione Contatti */
+.contatti {
     text-align: center;
-    min-width: 250px;
-    max-width: 300px;
-    transition: transform 0.3s ease-in-out;
+    padding: 50px;
+    background-color: #222;
+    color: white;
 }
 
-.contact-section .contact-box:hover {
-    transform: scale(1.05);
-}
-
-/* Titoli nei box della sezione contatti */
-.contact-section .contact-box h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #222; /* Nero */
-}
-
-/* Testo nei box della sezione contatti */
-.contact-section .contact-box p {
-    font-size: 16px;
-    color: #555; /* Grigio scuro */
-}
-
-/* Stile per le icone nella sezione contatti */
-.contact-section .contact-box i {
-    font-size: 24px;
-    color: #ffd700; /* Giallo */
-    margin-bottom: 10px;
-    display: block;
+.btn {
+    background: yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 /* Footer */
 footer {
-    background: #111;
-    color: #ffd700;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer-column {
-    text-align: left;
-}
-
-.footer-column h4 {
-    margin-bottom: 10px;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li a {
+    background: black;
     color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
- 
-<!-- Sezione Partner -->
-<section class="partners">
-    <div class="partner-container">
-        <div class="partner-image">
-            <img src="team-partner.jpg" alt="Team al lavoro">
-        </div>
-        <div class="partner-info">
-            <h3 class="partner-title">PARTNER</h3>
-            <h2>I Partner che ci aiutano a realizzare progetti straordinari</h2>
-            <div class="partner-logos">
-                <img src="partner1.png" alt="Partner 1">
-                <img src="partner2.png" alt="Partner 2">
-                <img src="partner3.png" alt="Partner 3">
-                <img src="partner4.png" alt="Partner 4">
-            </div>
-        </div>
-    </div>
-</section>
-}
-
-/* Hero Section */
-.hero {
     text-align: center;
-    background: url('hero-chi.jpg') center/cover no-repeat;
-    color: white;
-    padding: 60px 20px;
-}
-
-/* Sezione Chi Siamo */
-.about {
-    padding: 50px 0;
-    background-color: #f5f5f5;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.about-text {
-    width: 50%;
-}
-
-.about img {
-    width: 45%;
-    border-radius: 10px;
-}
-
-/* Sezione Perché Sceglierci */
-.why-choose-us {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.reasons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.reason {
-    width: 30%;
-    background: #f9f9f9;
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.reason img {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
-
-/* Sezione Progetti */
-.projects {
-    background: #f8f9fa; /* Ripristiniamo uno sfondo chiaro */
-    padding: 40px 20px;
-    text-align: center;
-}
-
-/* Griglia Progetti */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-/* Box per ogni Progetto */
-.project-box {
-    background: white; /* Sfondo bianco per contrastare con l'immagine di sfondo */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Leggero ombreggiamento */
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-box img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.project-box h3 {
-    margin-top: 15px;
-    font-size: 22px;
-    color: #222;
-}
-
-.project-box p {
-    font-size: 16px;
-    color: #555;
-}
-
-.project-box:hover {
-    transform: scale(1.05);
-
-}
-
-/* Pulsante */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #ffd700;
-    color: #222;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-/* Hero Contatti */
-.hero-contact {
-    background: url('contatti-hero.jpg') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-/* Sezione Contatti */
-.contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
-    background: #f8f9fa;
-}
-
-.contact-info {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contact-info p {
-    font-size: 18px;
-    color: #333;
-}
-
-.contact-info a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-/* Modulo di Contatto */
-.contact-form {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #222;
-    text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 12px;
-    background: #ffd700;
-    color: #222;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact-form button:hover {
-    background: #e6c200;
-}
-/* Cambia SOLO il colore delle scritte dei contatti */
-.contact-section h2,
-.contact-section h3,
-.contact-section p {
-    color: #222 !important; /* Testo nero */
-}
-
-/* Cambia anche il colore della sezione "Scrivici un messaggio" */
-.contact-form-container h2 {
-    color: #222 !important; /* Nero per il titolo */
-}
-/* Correggiamo il colore della scritta "I nostri contatti" */
-.contact-section h2 {
-    color: #222 !important; /* Nero */
-    text-align: center; /* Allineato al centro */
-    font-weight: bold;
-}
-/* Assicuriamoci che "I nostri contatti" sia nero */
-.contact-section h2 {
-    color: #000 !important; /* Testo nero definitivo */
-    text-align: center;
-    font-weight: bold;
-}
-/* Forziamo il colore nero per "I nostri contatti" */
-.contact-section h2 {
-    color: black !important; /* Nero assoluto */
-    text-align: center;
-    font-weight: bold;
-    opacity: 1 !important;
-}
-/* Forziamo il colore nero e annulliamo eventuali effetti di trasparenza */
-.contact-section h2 {
-    color: #000 !important; /* Nero assoluto */
-    text-align: center;
-    font-weight: bold;
-    background: none !important; /* Rimuove eventuali sfondi trasparenti */
-    filter: none !important; /* Disattiva eventuali effetti di trasparenza */
-    opacity: 1 !important; /* Rende il testo completamente visibile */
-}
-/* ==============================
-   🌍 RESPONSIVE DESIGN PERFETTO 
-================================= */
-
-/* Per schermi più piccoli di 1024px (Tablet) */
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 15px;
-        width: 100%;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .contact-info-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-box {
-        width: 90%;
-        max-width: 400px;
-    }
-}
-
-/* Per schermi più piccoli di 768px (Tablet Verticale e Smartphone) */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    h1, h2 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .contact-info-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .contact-box {
-        width: 90%;
-    }
-
-    /* Navbar mobile */
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-
-    header nav ul li {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .button {
-        width: 90%;
-        text-align: center;
-    }
-
-    /* Correggiamo i margini e padding dei box */
-    .about,
-    .mission,
-    .why-choose-us,
-    .contact-section {
-        padding: 20px;
-        text-align: center;
-    }
-
-    .contact-box {
-        width: 95%;
-    }
-}
-
-/* Per schermi più piccoli di 480px (Smartphone) */
-@media screen and (max-width: 480px) {
-    h1, h2 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .container {
-        padding: 5p
-/* Correzione dimensioni loghi Partner */
-.partner-logos img {
-    max-width: 150px; /* Imposta una dimensione massima per i loghi */
-    height: auto;
-    margin: 10px; /* Distanza tra i loghi */
-}
-
-@media screen and (max-width: 768px) {
-    .partner-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .partner-logos img {
-        max-width: 120px; /* Rimpicciolisce i loghi su schermi piccoli */
-    }
-
-/* Correzione layout sezioni Chi Siamo e Progetti */
-.section-header {
-    background-color: #f5f5f5; /* Colore più chiaro */
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px; /* Bordo arrotondato per un aspetto più elegante */
-}
-
-.section-header h2 {
-    color: #222; /* Cambia il colore del testo per una migliore leggibilità */
-}
-/* Correzione dimensioni loghi Partner */
-.partner-logos img {
-    max-width: 150px; /* Imposta una dimensione massima per i loghi */
-    height: auto;
-    margin: 10px; /* Distanza tra i loghi */
-}
-
-@media screen and (max-width: 768px) {
-    .partner-logos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .partner-logos img {
-        max-width: 120px; /* Rimpicciolisce i loghi su schermi piccoli */
-    }
-}
-
-/* Correzione layout sezioni Chi Siamo e Progetti */
-.section-header {
-    background-color: #f5f5f5; /* Colore più chiaro */
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px; /* Bordo arrotondato per un aspetto più elegante */
-}
-
-.section-header h2 {
-    color: #222; /* Cambia il colore del testo per una migliore leggibilità */
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.section-header {
-    text-align: center;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about-content img {
-    width: 45%;
-    border-radius: 10px;
-}
-
-.about-text {
-    width: 50%;
 }
