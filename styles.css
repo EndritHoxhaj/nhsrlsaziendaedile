@@ -393,26 +393,7 @@ footer {
     font-weight: bold;
     margin-top: 20px;
 }
-/* Hero Contatti - Manteniamo un'immagine di sfondo */
-.hero-contact {
-    background: url('contatti-hero.jpg') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-/* Overlay per migliorare la leggibilità del testo */
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    border-radius: 10px;
-}
-
-/* Sezione Contatti - Struttura con box */
+/* Contatti - Struttura generale */
 .contact-section {
     display: flex;
     flex-direction: column;
@@ -421,28 +402,31 @@ footer {
     background: #f8f9fa;
 }
 
+/* Contenitore per informazioni e modulo */
 .contact-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 1000px;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-/* Box Informazioni Contatti */
+/* Box Contatti */
 .contact-box {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .contact-box h3 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
+    color: #222;
 }
 
 .contact-box p {
@@ -456,7 +440,7 @@ footer {
     text-decoration: none;
 }
 
-/* Modulo di Contatto - Reso più grande e centrale */
+/* Modulo di Contatto */
 .contact-form-container {
     background: white;
     padding: 30px;
@@ -465,14 +449,16 @@ footer {
     width: 100%;
     max-width: 500px;
     text-align: center;
+    grid-column: span 2; /* Occupa tutta la larghezza nella griglia */
 }
 
 .contact-form-container h2 {
-    margin-bottom: 20px;
     font-size: 24px;
     color: #222;
+    margin-bottom: 20px;
 }
 
+/* Stile per i campi del modulo */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -483,6 +469,7 @@ footer {
     font-size: 16px;
 }
 
+/* Bottone modulo */
 .contact-form button {
     width: 100%;
     padding: 12px;
